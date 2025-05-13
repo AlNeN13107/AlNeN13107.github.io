@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>매점 선물 도우미</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎁 매점 선물 도우미</h1>
+
+  <div class="form-group">
+    <label for="category">카테고리</label>
+    <select id="category">
+      <option value="과자">과자</option>
+      <option value="음료">음료</option>
+      <option value="아이스크림">아이스크림</option>
+      <option value="음식">음식</option>
+      <option value="카페인음료">카페인음료</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="budget">예산 (원)</label>
+    <input type="number" id="budget" placeholder="ex) 1500"/>
+  </div>
+
+  <div class="form-group">
+    <label for="situation">상황</label>
+    <select id="situation">
+      <option value="시험 전">시험 전</option>
+      <option value="기분이 안 좋을 때">기분이 안 좋을 때</option>
+      <option value="생일">생일</option>
+      <option value="감사 인사">감사 인사</option>
+    </select>
+  </div>
+
+  <button onclick="recommendGift()">추천 받기</button>
+
+  <div id="result" class="result" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
